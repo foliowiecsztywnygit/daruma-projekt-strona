@@ -55,9 +55,10 @@ export default function Navbar() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className={`text-sm font-medium hover:text-[var(--color-accent)] transition-colors ${!isScrolled ? 'text-white/90 hover:text-white' : 'text-[var(--color-primary)]'}`}
+                  className={`relative text-sm font-medium transition-colors group ${!isScrolled ? 'text-white/90 hover:text-white' : 'text-[var(--color-primary)] hover:text-[var(--color-accent)]'}`}
                 >
                   {link.name}
+                  <span className={`absolute -bottom-1 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${!isScrolled ? 'bg-white' : 'bg-[var(--color-accent)]'}`}></span>
                 </a>
               </li>
             ))}

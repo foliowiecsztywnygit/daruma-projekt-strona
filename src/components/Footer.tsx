@@ -13,7 +13,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[var(--color-primary)] text-[var(--color-surface)] py-12 border-t border-neutral-800">
+    <footer className="bg-neutral-900 text-white py-12 border-t border-neutral-800">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Company Info Footer Section (similar to SQM) */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12 pb-12 border-b border-neutral-800">
@@ -47,10 +47,10 @@ export default function Footer() {
 
           <div className="flex items-center space-x-8">
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#about" className="hover:text-[var(--color-surface)] transition-colors">{t('nav.about')}</a>
-              <a href="#services" className="hover:text-[var(--color-surface)] transition-colors">{t('nav.services')}</a>
-              <a href="#approach" className="hover:text-[var(--color-surface)] transition-colors">{t('nav.approach')}</a>
-              <a href="#contact" className="hover:text-[var(--color-surface)] transition-colors">{t('nav.contact')}</a>
+              <a href="#about" className="hover:text-white transition-colors">{t('nav.about')}</a>
+              <a href="#services" className="hover:text-white transition-colors">{t('nav.services')}</a>
+              <a href="#approach" className="hover:text-white transition-colors">{t('nav.approach')}</a>
+              <a href="#contact" className="hover:text-white transition-colors">{t('nav.contact')}</a>
             </div>
 
             <div className="w-px h-4 bg-neutral-700"></div>
@@ -59,9 +59,9 @@ export default function Footer() {
               onClick={toggleLanguage}
               className="flex items-center text-sm font-medium hover:text-[var(--color-accent)] transition-colors"
             >
-              <span className={i18n.language === 'pl' ? 'text-[var(--color-surface)]' : 'text-gray-500'}>PL</span>
+              <span className={i18n.language === 'pl' ? 'text-white' : 'text-gray-500'}>PL</span>
               <span className="mx-1 text-gray-600">/</span>
-              <span className={i18n.language === 'en' ? 'text-[var(--color-surface)]' : 'text-gray-500'}>EN</span>
+              <span className={i18n.language === 'en' ? 'text-white' : 'text-gray-500'}>EN</span>
             </button>
           </div>
         </div>
