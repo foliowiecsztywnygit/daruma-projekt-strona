@@ -81,12 +81,12 @@ export const ConfigProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [loading, setLoading] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
-  // Initialize dark mode from localStorage or system preference
+  // Initialize dark mode from localStorage, defaulting to dark mode
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    const initialDarkMode = savedTheme ? savedTheme === 'dark' : prefersDark;
+    // Default to dark mode if no saved theme exists, regardless of system preference
+    const initialDarkMode = savedTheme ? savedTheme === 'dark' : true;
     setIsDarkMode(initialDarkMode);
     
     if (initialDarkMode) {
