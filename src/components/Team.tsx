@@ -5,7 +5,7 @@ import { useConfig } from '../context/ConfigContext';
 import type { TeamMember } from '../context/ConfigContext';
 
 export default function Team() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const { config } = useConfig();
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
@@ -26,7 +26,7 @@ export default function Team() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+      transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as any },
     },
   };
 

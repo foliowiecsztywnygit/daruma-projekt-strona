@@ -1,8 +1,7 @@
-import { render, screen, act, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ConfigProvider, useConfig } from './ConfigContext';
 import { vi, describe, it, expect, beforeEach, afterEach } from 'vitest';
-import React from 'react';
 
 // A mock component to consume the context
 const TestComponent = () => {
@@ -25,7 +24,7 @@ describe('ConfigContext Theme Toggle', () => {
     document.documentElement.style.cssText = '';
     
     // Mock fetch for siteConfig.json
-    global.fetch = vi.fn(() =>
+    window.fetch = vi.fn(() =>
       Promise.resolve({
         json: () => Promise.resolve({
           theme: {
