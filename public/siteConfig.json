@@ -47,11 +47,11 @@
   },
   "team": [
     {
-      "id": "1",
+      "id": "2",
       "name": "Piotr Węcławiak",
       "position": {
-        "pl": "Partner | Główny Architekt",
-        "en": "Partner | Lead Architect"
+        "pl": "Założyciel",
+        "en": "Founder"
       },
       "photo": "",
       "shortDescription": {

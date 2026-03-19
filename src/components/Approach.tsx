@@ -32,12 +32,18 @@ export default function Approach() {
             {/* Minimalist Stock Market Line Graph SVG */}
             <svg 
               viewBox="0 0 800 400" 
-              className="w-full h-full p-8"
+              className="absolute inset-0 w-full h-full"
               preserveAspectRatio="none"
             >
-              {/* Subtle X and Y axis lines */}
-              <line x1="40" y1="360" x2="760" y2="360" stroke="currentColor" strokeWidth="1" className="text-gray-200 dark:text-neutral-800" />
-              <line x1="40" y1="40" x2="40" y2="360" stroke="currentColor" strokeWidth="1" className="text-gray-200 dark:text-neutral-800" />
+              {/* Subtle Grid Lines */}
+              <g className="text-neutral-200 dark:text-neutral-800" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4">
+                <line x1="0" y1="100" x2="800" y2="100" />
+                <line x1="0" y1="200" x2="800" y2="200" />
+                <line x1="0" y1="300" x2="800" y2="300" />
+                <line x1="200" y1="0" x2="200" y2="400" />
+                <line x1="400" y1="0" x2="400" y2="400" />
+                <line x1="600" y1="0" x2="600" y2="400" />
+              </g>
 
               {/* Smooth upward trending line graph */}
               {/* Note: Instead of animating pathLength, we draw the whole path and animate the clip-path to reveal it left-to-right, so the arrow can travel with the leading edge. */}
@@ -59,9 +65,9 @@ export default function Approach() {
                   repeatDelay: 0.5
                 }}
               >
-                {/* The main curve */}
+                {/* The main curve - extended to fill the container */}
                 <path
-                  d="M 40 320 C 100 320, 120 280, 180 250 C 240 220, 260 260, 320 200 C 380 140, 400 180, 460 120 C 520 60, 540 100, 600 80 C 660 60, 700 40, 760 40"
+                  d="M 0 350 C 100 350, 150 280, 200 250 C 250 220, 300 280, 400 200 C 500 120, 550 180, 600 100 C 650 20, 700 80, 800 40"
                   fill="none"
                   stroke="var(--color-primary)"
                   strokeWidth="4"
@@ -69,9 +75,9 @@ export default function Approach() {
                   strokeLinejoin="round"
                 />
                 
-                {/* The gradient fill */}
+                {/* The gradient fill - extended to fill the container */}
                 <path
-                  d="M 40 320 C 100 320, 120 280, 180 250 C 240 220, 260 260, 320 200 C 380 140, 400 180, 460 120 C 520 60, 540 100, 600 80 C 660 60, 700 40, 760 40 L 760 360 L 40 360 Z"
+                  d="M 0 350 C 100 350, 150 280, 200 250 C 250 220, 300 280, 400 200 C 500 120, 550 180, 600 100 C 650 20, 700 80, 800 40 L 800 400 L 0 400 Z"
                   fill="url(#graph-gradient)"
                   className="opacity-10 dark:opacity-20"
                 />
@@ -92,7 +98,7 @@ export default function Approach() {
                   repeatDelay: 0.5
                 }}
                 style={{
-                  offsetPath: 'path("M 40 320 C 100 320, 120 280, 180 250 C 240 220, 260 260, 320 200 C 380 140, 400 180, 460 120 C 520 60, 540 100, 600 80 C 660 60, 700 40, 760 40")',
+                  offsetPath: 'path("M 0 350 C 100 350, 150 280, 200 250 C 250 220, 300 280, 400 200 C 500 120, 550 180, 600 100 C 650 20, 700 80, 800 40")',
                   offsetRotate: "auto"
                 }}
               />
