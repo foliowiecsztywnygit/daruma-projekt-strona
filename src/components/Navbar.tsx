@@ -107,29 +107,40 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 md:hidden flex flex-col space-y-4"
+            className="absolute top-full left-0 w-full bg-[var(--color-surface)] shadow-lg py-4 px-6 md:hidden flex flex-col space-y-4"
           >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-medium"
+                className="text-lg font-medium text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors"
               >
                 {link.name}
               </a>
             ))}
-            <div className="pt-4 border-t border-gray-100">
+            <div className="pt-4 border-t border-neutral-200 dark:border-neutral-800 flex items-center justify-between">
               <button
                 onClick={() => {
                   toggleLanguage();
                   setIsMobileMenuOpen(false);
                 }}
-                className="flex items-center text-lg font-medium"
+                className="flex items-center text-lg font-medium text-[var(--color-primary)]"
               >
-                <span className={i18n.language === 'pl' ? 'font-bold' : 'text-gray-400'}>PL</span>
-                <span className="mx-2">/</span>
-                <span className={i18n.language === 'en' ? 'font-bold' : 'text-gray-400'}>EN</span>
+                <span className={i18n.language === 'pl' ? 'font-bold' : 'opacity-60'}>PL</span>
+                <span className="mx-2 opacity-60">/</span>
+                <span className={i18n.language === 'en' ? 'font-bold' : 'opacity-60'}>EN</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  toggleDarkMode();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="p-2 rounded-full text-[var(--color-primary)] hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                aria-label="Toggle Dark Mode"
+              >
+                {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
             </div>
           </motion.div>
