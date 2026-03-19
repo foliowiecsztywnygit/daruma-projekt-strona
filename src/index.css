@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-secondary: #f5f5f5;
+  --color-accent: #737373; /* neutral gray instead of gold */
+  --color-dark-accent: #404040; /* darker neutral gray */
+  --color-surface: #ffffff;
+  
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --spacing-section-y: 8rem;
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+  }
+
+  html.dark {
+    --color-primary: #ffffff;
+    --color-secondary: #1a1a1a;
+    --color-surface: #0a0a0a;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300; /* Thinner font globally */
+    user-select: none; /* Make text impossible to copy */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 300; /* Thinner font for headings */
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

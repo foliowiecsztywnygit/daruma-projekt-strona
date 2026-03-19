@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "about": "O nas",
+    "services": "Usługi",
+    "approach": "Podejście",
+    "team": "Zespół",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Projektujemy przestrzenie z myślą o przyszłości.",
+    "subtitle": "Doświadczony zespół architektów dostarczający wysokiej jakości dokumentację projektową na terenie całej Polski.",
+    "cta": "Skontaktuj się"
+  },
+  "about": {
+    "text": "Jesteśmy zespołem doświadczonych architektów, którzy nie tylko projektują, ale przede wszystkim analizują i proponują optymalne rozwiązania dla inwestorów."
+  },
+  "services": {
+    "title": "Nasze usługi",
+    "items": {
+      "halls": {
+        "title": "Hale usługowe i przemysłowe",
+        "desc": "Kompleksowe projekty obiektów wielkopowierzchniowych, zoptymalizowane pod kątem funkcjonalności i kosztów."
+      },
+      "buildings": {
+        "title": "Budynki jedno i wielorodzinne",
+        "desc": "Nowoczesne i ergonomiczne projekty mieszkaniowe dostosowane do indywidualnych potrzeb inwestora."
+      },
+      "inventories": {
+        "title": "Inwentaryzacje budowlane",
+        "desc": "Precyzyjne pomiary i dokumentacja istniejących obiektów z wykorzystaniem nowoczesnych technologii."
+      },
+      "extensions": {
+        "title": "Rozbudowy, nadbudowy i przebudowy",
+        "desc": "Projekty modernizacji istniejących budynków, zwiększające ich wartość i użyteczność."
+      },
+      "demolitions": {
+        "title": "Projekty rozbiórki",
+        "desc": "Pełna dokumentacja i wsparcie formalne w procesie bezpiecznej rozbiórki obiektów."
+      },
+      "analyses": {
+        "title": "Analizy działek",
+        "desc": "Szczegółowe badanie potencjału inwestycyjnego terenów przed podjęciem decyzji o zakupie."
+      }
+    }
+  },
+  "approach": {
+    "title": "Nasze podejście",
+    "text": "Tworzymy rozwiązania, które odpowiadają na realne potrzeby inwestora — analizujemy, optymalizujemy i dostarczamy dopracowane projekty."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "email": "Email",
+    "phone": "Telefon",
+    "location": "Lokalizacja",
+    "location_value": "Polska",
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Adres email",
+      "message": "Wiadomość",
+      "submit": "Wyślij wiadomość"
+    }
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone."
+  }
+}

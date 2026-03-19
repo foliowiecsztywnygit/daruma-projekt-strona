@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "approach": "Approach",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "We design spaces with future in mind.",
+    "subtitle": "An experienced team of architects delivering high-quality design documentation throughout Poland.",
+    "cta": "Contact us"
+  },
+  "about": {
+    "text": "We are a team of experienced architects who not only design, but above all analyze and propose optimal solutions for investors."
+  },
+  "services": {
+    "title": "Our Services",
+    "items": {
+      "halls": {
+        "title": "Commercial and industrial halls",
+        "desc": "Comprehensive designs of large-scale facilities, optimized for functionality and costs."
+      },
+      "buildings": {
+        "title": "Single and multi-family buildings",
+        "desc": "Modern and ergonomic residential designs tailored to individual investor needs."
+      },
+      "inventories": {
+        "title": "Building inventories",
+        "desc": "Precise measurements and documentation of existing facilities using modern technologies."
+      },
+      "extensions": {
+        "title": "Extensions, superstructures and reconstructions",
+        "desc": "Modernization projects for existing buildings, increasing their value and usability."
+      },
+      "demolitions": {
+        "title": "Demolition projects",
+        "desc": "Full documentation and formal support in the process of safe demolition of facilities."
+      },
+      "analyses": {
+        "title": "Plot analyses",
+        "desc": "Detailed study of the investment potential of land before making a purchase decision."
+      }
+    }
+  },
+  "approach": {
+    "title": "Our Approach",
+    "text": "We create solutions that respond to the real needs of the investor — we analyze, optimize and deliver refined designs."
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "location_value": "Poland",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
